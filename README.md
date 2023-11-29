@@ -25,3 +25,18 @@ stock_price: {
 A file is formatted correctly if each opening parenthesis: ( { [ is closed out with its
 respective "closing" parenthesis: ) } ] . The open bracket character { matches } on the
 same line, however, { and [ may match over multiple lines. Incorrect data could look like:
+
+
+# test case:
+test_cases = [
+"({[]})",
+"[{()}](){}",
+"{[}]",
+"()()()",
+"",
+"){}",
+"(",
+"([)]",
+"a(b[c]{d}e)",
+"{[()()]}"
+]
